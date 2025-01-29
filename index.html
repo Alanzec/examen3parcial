@@ -1,11 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Alanzec</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="bootbox.all.min.js"></script>
+    </head>
+    <body>
+    <!-- Encabezado principal -->
+    <header>
+        <div class="container">
+        <h1>Alanzec</h1>
+        <nav>
+            <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#juegos">Juegos</a></li>
+            <li><a href="#acuerdo">Acuerdo</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="Creaciones" class="container">
+            <h2>Mis Creaciones</h2>
+
+        </section>
+        <section id="contenido-principal" class="container">
+        <!-- Tres secciones con imagen y texto -->
+        <article class="section">
+            <img src="img/Mesa de trabajo 1-100.webp" alt="Imagen del legado">
+            <div class="text-content">
+              <h3>El legado del fuego y la sombra</h3>
+              <p>Draconic, mitad humano y mitad dragón, nace del sacrificio de su padre y es criado en Atolis bajo la tutela del sabio dragón Ignis. Con habilidades excepcionales y el peso de un legado ancestral, Draconic enfrenta la mayor amenaza de su vida: los Buscadores de la Oscuridad, un grupo de caballeros que cazan dragones, liderados por una siniestra figura envuelta en humo púrpura.
+
+                Con su destino entrelazado entre dos mundos, Draconic deberá superar sus propios miedos y proteger a ambos reinos. ¿Será capaz de honrar el legado de su padre y detener la oscuridad que amenaza con consumirlo todo?</p>
+            </div>
+          </article>
+          <article class="section">
+            <img src="img/DALL·E 2025-01-28 16.21.14 - Un icono para un videojuego llamado 'Boxing VR', con un diseño que incluye un visor de realidad virtual estilizado y guantes de boxeo rojos cruzados e.webp" alt="Imagen del legado">
+            <div class="text-content">
+              <h3>Boxing VR</h3>
+              <p>¡Entra en el mundo de Nordic Boxing VR y conviértete en un verdadero guerrero vikingo! Entrena en un impresionante paisaje nórdico, golpeando sacos de boxeo y lanzando hachas, escudos y más. Siente la adrenalina mientras mejoras tus reflejos y desatas tu fuerza en una experiencia inmersiva que combina acción y ejercicio físico. ¡Demuestra tu poder y forja tu leyenda en Nordic Boxing VR!</p>
+            </div>
+          </article>
+          <article class="section">
+            <img src="img/DALL·E 2025-01-28 16.46.47 - Un icono para un videojuego llamado 'Captree'. El diseño muestra una torre de guardabosque estilizada en el centro, rodeada de un bosque con árboles a.webp" alt="Imagen del legado">
+            <div class="text-content">
+              <h3>Captree</h3>
+              <p>¡Prepárate para una aventura épica en Captree! Juega como un guardabosques que despierta en medio de un incendio forestal devastador, con todo tu mundo en llamas. Al borde de la desesperación, un misterioso artefacto te otorga la habilidad de viajar al pasado, justo un día antes del desastre.
+
+                Tu misión: detener a las siniestras fuerzas que planean destruir el bosque. Explora un entorno cambiante, enfréntate a enemigos esqueléticos y utiliza el poder del tiempo para recolectar armas y objetos esenciales. Cada decisión que tomes puede salvar o condenar al bosque.
+                
+                ¿Serás capaz de cambiar el destino? ¡Descúbrelo en Captree, donde cada segundo cuenta!</p>
+            </div>
+          </article>
+        </section>
+
+        <!-- Términos y condiciones -->
+        <!--<section id="terminos" class="container">-->
+        <h2>Términos y condiciones</h2>
+        <button id="mostrar">Mostrar Términos</button>
+        <div id="terminos">
+            <h3>1. Aceptación de los Términos</h3>
+            <p>Al registrarse, usted acepta estos términos y condiciones. Si no está de acuerdo, no podrá participar en la beta.</p>
+            <h3>2. Datos Personales</h3>
+            <p>Recopilamos su nombre, correo electrónico y número de teléfono solo para:</p>
+            <p>○ Verificar su elegibilidad.</p>
+            <p>○ Comunicarnos sobre el preregistro y el estado de la beta. Su información se gestionará de acuerdo con nuestra [Política de Privacidad].</p>
+            <h3>3. Uso de la Información</h3>
+            <p>Al registrarse, acepta recibir correos y mensajes sobre la beta. Puede darse de baja en cualquier momento.</p>
+            <h3>4. Participación en la Beta</h3>
+            <p>El preregistro no garantiza el acceso a la beta. La selección de participantes es a discreción del equipo.</p>
+            <h3>5. Confidencialidad</h3>
+            <p>Si accede a la beta, no puede compartir ni filtrar información sobre el juego sin permiso.</p>
+            <h3>6. Modificaciones</h3>
+            <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios se le notificarán.</p>
+            <h3>7. Protección de Datos</h3>
+            <p>Nos comprometemos a proteger sus datos y no compartiremos su información sin su consentimiento, salvo por motivos legales.</p>
+            <h3>8. Cancelación</h3>
+            <p>Puede solicitar la eliminación de sus datos y registro enviándonos un correo a [email de contacto].</p>
+            <h3>9. Contacto</h3>
+            <p>Para cualquier duda, contáctenos en [email o número de contacto].</p>
+            <button id="esconder">Esconder Términos</button> 
+        </div>
+
+        </section>
+
+        <!-- Formulario -->
+        <section id="formulario" class="container">
+        <form>
+            <fieldset>
+            <legend>Información del usuario</legend>
+
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+            <label for="number">Número:</label>
+            <input type="number" id="number" name="number" placeholder="Tu número" required>
+            </fieldset>
+
+            <fieldset>
+            <legend>Consentimiento</legend>
+
+            <div class="radios">
+                <label>
+                <input type="radio" name="accept" value="accept" required> Acepto
+                </label>
+                <label>
+                <input type="radio" name="accept" value="decline" required> No acepto
+                </label>
+            </div>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <!--Inicio del footer-->
+    <footer>
+      <!--Titulo y subtitulo del footer-->
+      <h1>Si te gusta el contenido, ¡sígueme! :D</h1>
+      <h2>Sigueme en mis redes sociales</h2>
+
+      <!--Iconos con link a las redes sociales-->
+  
+      <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank">
+              <img src="img/icons8-instagram-500.png" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+              <img src="img/icons8-facebook-500.png" alt="Facebook">
+          </a>
+          <a href="https://www.twitter.com/" target="_blank">
+              <img src="img/icons8-x-500.png" alt="Twitter">
+          </a>
+      </div>
+
+      <!--Un parafo que indica el copyrigth de la pagina-->
+  
+      <div class="copyright">
+          <p>&copy; 2025 Alanzec - Todos los derechos reservados.</p> <!--&copy es un carracter especial de HTML-->
+      </div>
+  </footer>
+  <!--Fin del footer-->
+    <script>
+        $(document).ready(function () {
+          // Ocultamos los términos inicialmente
+          $("#terminos").hide();
     
-</body>
-</html>
+          // Mostrar los términos
+          $("#mostrar").on("click", function () {
+            $("#terminos").slideDown(); // Muestra con animación
+            $("#mostrar").hide(); // Oculta el botón de "Mostrar"
+          });
+    
+          // Esconder los términos
+          $("#esconder").on("click", function () {
+            $("#terminos").slideUp(); // Oculta con animación
+            $("#mostrar").show(); // Vuelve a mostrar el botón de "Mostrar"
+          });
+        });
+      </script>
+    </body>
+    </html>

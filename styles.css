@@ -1,0 +1,213 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #b6917c;
+    color: #fff;
+  }
+  
+  /* Contenedor general */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #441b1b;
+    color: #fff;
+    padding: 10px 0;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+  }
+  /* Estilos del footer */
+footer {
+  background-color: #441b1b;
+  color: rgb(255, 255, 255); 
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px; 
+}
+/*Tamaño de letra el h1*/
+footer h1 {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+/*Tamaño de letra el h2*/
+footer h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+/*Asignamos un marjen para los iconos*/
+footer .social-icons {
+  margin-top: 20px;
+}
+/*Alinea los iconos en una sola linea y le aplica separacion entre ellos y le quitamos el texto descriptivo*/
+footer .social-icons a {
+  display: inline-block; /*Convertimos los enlaces <a> en elementos de bloque en linea que nos permite que los iconos se pongan uno alado de otro*/
+  margin: 0 15px;
+  text-decoration: none;
+}
+/*Establece el tamaño de los iconos y una animacion al pasar el cursor que suaviza el moviento
+de la escala*/
+footer .social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.5s ease;
+}
+/*Auemnta el tamaño del icono al estar el cursor encima*/
+footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+/* Texto pequeño de copyright */
+footer .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Secciones */
+  .section {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .section .text-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+  }
+  .section img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  .text-content h3 {
+    margin-top: 0;
+  }
+  
+  /* Términos y condiciones */
+  #terminos {
+    display: none; /* Ocultamos inicialmente los términos */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #fff;
+    background-color: #441b1b;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+  }
+  
+  /* Formulario */
+  form {
+    background: #441b1b;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  form fieldset {
+    margin-bottom: 20px;
+    border: none;
+  }
+  form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .radios {
+    display: flex;
+    gap: 10px;
+  }
+  button {
+    background-color: #7ae764;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  button#esconder {
+    margin-top: 10px;
+  }
+  button:hover {
+    background-color: #030303;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    } 
+    .section {
+      flex-direction: column; 
+      text-align: center; 
+    }
+  
+    .section img {
+      margin: 0 auto 10px; 
+      width: 100%; 
+      max-width: 300px; 
+    .section .text-content {
+      margin: 0 auto; 
+    }
+    #terminos {
+      text-align: center; 
+      padding: 15px; /* Más espacio interno para mejor legibilidad */
+    }
+  
+    button {
+      width: 100%; 
+      font-size: 14px; 
+    }
+  }
+} 
+  
+  
